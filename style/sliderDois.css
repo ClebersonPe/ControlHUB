@@ -1,0 +1,137 @@
+body{
+    overflow-x: hidden;
+}
+
+.suporte{
+    color:  white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: 
+    linear-gradient(to left, #e47bf9, #54467b);
+    text-align: center;
+    
+    z-index: 10;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 102%;
+    box-shadow: rgba(80, 32, 88, 0.35) 0px 5px 15px;
+    margin-top: 3%;
+   
+}
+
+.suporte h1{
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+
+
+.matos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 2%;
+    border-radius: 5px;
+    box-shadow: rgba(80, 32, 88, 0.35) 0px 5px 15px;
+}
+
+.matos .container{
+    width: 102%;
+    height: 100px;
+    display: flex;
+    
+}
+
+.plau{
+    border-bottom: 1px solid white;
+    z-index: 20;
+}
+
+
+.carousel{
+    display: flex;
+    width: 102%;
+    position: relative;
+    align-items: center;
+    background: 
+    linear-gradient(to bottom, rgba(239, 235, 235, 0), #1a093e);
+    background: 
+    linear-gradient(to left, #e47bf9, #54467b);
+   
+   
+    margin-top: -2%;
+}
+
+.ptdois{
+    background: 
+    linear-gradient(to left, #e47bf9, #57467B);
+   
+}
+
+.item{
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    left: 100%;
+    animation: autoRun 20s linear infinite;
+    animation-delay: var(--delay);
+    cursor: pointer;
+    border-radius: 50px;
+   
+    padding: 3px;
+    border: 1px solid #ffffff;
+
+}
+
+
+.item img{
+    width: 100%;
+    height: 100%;
+}
+
+.itemDois{
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    right: 100%;
+    animation: autoRunDois 20s linear infinite;
+    animation-delay: var(--delay);
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 3px;
+    border: 1px solid #ffffff;
+    
+    
+}
+
+.itemDois img{
+    width: 100%;
+    height: 100%;
+}
+
+.itemDois:hover, .item:hover{
+    transition: 0.4s;
+    background-color: #b59fe5;
+}
+
+@keyframes autoRunDois{
+    from{
+        right: 100%;
+    }
+
+    to{
+        right: -100px;
+    }
+}
+
+@keyframes autoRun{
+    from {
+        left:100%;
+    }
+    to{
+        left: -100px;
+    }
+}
